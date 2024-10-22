@@ -1,2 +1,2 @@
-# DiskNeuralRTI-code
+# DiskNeuralRTI Implementation
 Coming soon!
