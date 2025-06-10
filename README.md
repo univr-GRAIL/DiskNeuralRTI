@@ -11,11 +11,10 @@ Change working directory to DiskNeuralRTI
        neuralenv\Scripts\activate  
     On Linux/macOS:  
        source neuralenv/bin/activate  
-## Install Dependencies  
+## Install Dependencies:    
  Please install the dependencies using the following command:    
    pip install -r requirements.txt  
-Make sure you're in a Python environment, neuralenv    
-<br>
+ Make sure you're in a Python environment, neuralenv    
 ## Training  
 To train DiskNeuralRTI on your dataset, please modify the training parameters.  
 Edit utils/params.py to point to your dataset and training config.  
