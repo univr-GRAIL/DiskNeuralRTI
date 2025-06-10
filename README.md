@@ -1,5 +1,7 @@
 # DiskNeuralRTI Implementation
-This is a PyTorch implementation of DiskNeuralRTI.
+This is a PyTorch implementation of DiskNeuralRTI. 
+
+## Getting Started
 Download and extract DiskNeuralRTI  
 Change working directory to DiskNeuralRTI  
 ## Create a virtual environment:   
