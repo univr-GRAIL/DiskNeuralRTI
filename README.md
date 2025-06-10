@@ -1,7 +1,7 @@
 # DiskNeuralRTI Implementation
-Download and extract DiskNeuralRTI
-Change working directory to DiskNeuralRTI
-Create a virtual environment: 
+Download and extract DiskNeuralRTI  
+Change working directory to DiskNeuralRTI  
+Create a virtual environment:   
     python -m venv neuralenv
 Activate a virtual environment:
     On Windows:
