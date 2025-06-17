@@ -19,7 +19,7 @@ Install the dependencies using the following command:
 To train **DiskNeuralRTI** on your dataset, modify the training parameters.  
     Edit utils/params.py to point to your dataset and training config.  
       &nbsp;&nbsp;&nbsp;&nbsp; data_path: "your_dataset_path/",  
-       &nbsp;&nbsp;&nbsp;&nbsp;output_path: "output/"  
+      &nbsp;&nbsp;&nbsp;&nbsp;output_path: "output/"  
       &nbsp;&nbsp;&nbsp;&nbsp; mask: "True/False"  
 Run   
 &nbsp;&nbsp;&nbsp;&nbsp;python train.py  
@@ -29,15 +29,15 @@ The output contains:
 - The model and compressed coefficients used for testing.
 - The image planes and JSON file used for interactive relighting using the [OpenLIME tool](https://github.com/cnr-isti-vclab/openlime) web visualizer.
 
-   
+
 If the codes run correctly, you will find the output file [input-file/output] in the directory  
 
 ## Test/Relighting  
 To generate a relighted image:  
    &nbsp;&nbsp;&nbsp;&nbsp; open test.py  
    &nbsp;&nbsp;&nbsp;&nbsp; Modify these variables:  
-    &nbsp;&nbsp;&nbsp;&nbsp; model_path = "output/model_name.pth"  # your trained model  
-    &nbsp;&nbsp;&nbsp;&nbsp;gt_path = "your_test_image"  
+   &nbsp;&nbsp;&nbsp;&nbsp; model_path = "output/model_name.pth"  # your trained model  
+   &nbsp;&nbsp;&nbsp;&nbsp;gt_path = "your_test_image"  
 
 ## Run:  
 python test.py  
