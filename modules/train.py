@@ -71,11 +71,9 @@ trainer.fit(model, train_loader, valid_loader)
 encoder = model.encoder
 decoder = model.decoder
 
-decoder_fpath = teacher_spath + "/decoder.pth"
-encoder_fpath = teacher_spath + "/encoder.pth"
+decoder_fpath = teacher_spath + "/model.pth"
 coeff_fpath = teacher_spath + '/coefficient.npy'
 torch.save(decoder, decoder_fpath)
-torch.save(encoder, encoder_fpath)
 encoder.eval()
 with torch.no_grad():
     reconst_imgs = encoder(input_samples)
@@ -110,8 +108,7 @@ trainer_distillation = L.Trainer(enable_model_summary=False, max_epochs=max_epoc
 model_distillation = LitAutoEncoder_student(num_inputs=num_samples * no_channels, teacher_model=teacher_spath,
                                             temperature=1, alpha=alpha)
 trainer_distillation.fit(model_distillation, train_loader, valid_loader)
-student_decoder_fpath = student_spath + "/decoder.pth"
-student_encoder_fpath = student_spath + "/encoder.pth"
+student_decoder_fpath = student_spath + "/model.pth"
 student_coeff_fpath = student_spath + '/coefficient.npy'
 encoder_student = model_distillation.encoder
 decoder_student = model_distillation.decoder
@@ -137,7 +134,6 @@ for j in range(comp_coeff // 3):
     cv.imwrite(student_spath + '/plane' + '_' + str(j) + '.png',
                features[..., 3 * j:3 * (j + 1)].astype(np.uint8))
 t2 = time.time()
-torch.save(encoder_student, student_encoder_fpath)
 save_web_format(student_decoder_fpath, student_coeff_fpath, h, w, comp_coeff, student_spath, num_samples)
 
 print('done!')
