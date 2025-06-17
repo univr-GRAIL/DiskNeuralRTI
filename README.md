@@ -21,7 +21,7 @@ To train **DiskNeuralRTI** on your dataset, modify the training parameters.
        data_path: "your_dataset_path/",  
        output_path: "output/"  
        mask: "True/False"  
-## Run   
+Run   
 python train.py  
 Once the training is completed, you will find an output file inside the `output_path` directory.
 
@@ -34,10 +34,10 @@ The output contains:
 
 ## Test/Relighting  
 To generate a relighted image:  
-    open test.py  
-    Modify these variables:  
-    model_path = "output/model_name.pth"  # your trained model  
-    gt_path = "your_test_image"  
+   &nbsp;&nbsp;&nbsp;&nbsp; open test.py  
+   &nbsp;&nbsp;&nbsp;&nbsp; Modify these variables:  
+    &nbsp;&nbsp;&nbsp;&nbsp; model_path = "output/model_name.pth"  # your trained model  
+    &nbsp;&nbsp;&nbsp;&nbsp;gt_path = "your_test_image"  
 
 ## Run:  
 python test.py  
