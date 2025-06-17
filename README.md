@@ -7,13 +7,13 @@ Change working directory to DiskNeuralRTI
 ## Create a virtual environment:   
     python -m venv neuralenv  
 ### Activate a virtual environment:  
-    On Windows:  
+On Windows:  
        neuralenv\Scripts\activate  
-    On Linux/macOS:  
+On Linux/macOS:  
        source neuralenv/bin/activate  
 ## Install Dependencies:    
-    Please install the dependencies using the following command:    
-      pip install -r requirements.txt  
+Install the dependencies using the following command:    
+    pip install -r requirements.txt  
     Make sure you're in a Python environment, neuralenv    
 ## Training  
     To train **DiskNeuralRTI** on your dataset, modify the training parameters.  
