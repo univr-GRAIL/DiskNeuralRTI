@@ -16,7 +16,7 @@ Change working directory to DiskNeuralRTI
       pip install -r requirements.txt  
     Make sure you're in a Python environment, neuralenv    
 ## Training  
-    To train DiskNeuralRTI on your dataset, modify the training parameters.  
+    To train **DiskNeuralRTI** on your dataset, modify the training parameters.  
     Edit utils/params.py to point to your dataset and training config.  
        data_path: "your_dataset_path/",  
        output_path: "output/"  
