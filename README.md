@@ -21,15 +21,14 @@ To train **DiskNeuralRTI** on your dataset, modify the training parameters.
        data_path: "your_dataset_path/",  
        output_path: "output/"  
        mask: "True/False"  
-
+## Run   
+python train.py  
 Once the training is completed, you will find an output file inside the `output_path` directory.
 
 The output contains:
 - The model and compressed coefficients used for testing.
 - The image planes and JSON file used for interactive relighting using the [OpenLIME tool](https://github.com/cnr-isti-vclab/openlime) web visualizer.
 
-## Run   
-    python train.py  
     
    If the codes run correctly, you will find the output file [input-file/output] in the directory  
 
@@ -41,7 +40,7 @@ To generate a relighted image:
     gt_path = "your_test_image"  
 
 ## Run:  
-    python test.py  
+python test.py  
     It will output a relighted image model_path + '/relighted' folder.  
 
 
