@@ -21,10 +21,13 @@ Change working directory to DiskNeuralRTI
        data_path: "your_dataset_path/",  
        output_path: "output/"  
        mask: "True/False"  
-    Once the training is completed, you will find an output file inside the output_path directory.   
-    The output contains:
-        - The model and compressed coefficient used for testing.
-        - The image planes and JSON file used for interactive relighting using [OpenLIME tool](https://github.com/cnr-isti-vclab/openlime) web visualizer.
+
+Once the training is completed, you will find an output file inside the `output_path` directory.
+
+The output contains:
+- The model and compressed coefficients used for testing.
+- The image planes and JSON file used for interactive relighting using the [OpenLIME tool](https://github.com/cnr-isti-vclab/openlime) web visualizer.
+
 ## Run   
     python train.py  
     
