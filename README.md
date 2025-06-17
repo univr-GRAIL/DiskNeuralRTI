@@ -16,11 +16,15 @@ Change working directory to DiskNeuralRTI
       pip install -r requirements.txt  
     Make sure you're in a Python environment, neuralenv    
 ## Training  
-    To train DiskNeuralRTI on your dataset, please modify the training parameters.  
+    To train DiskNeuralRTI on your dataset, modify the training parameters.  
     Edit utils/params.py to point to your dataset and training config.  
        data_path: "your_dataset_path/",  
        output_path: "output/"  
        mask: "True/False"  
+    Once the training is completed, you will find an output file inside the output_path directory.   
+    The output contains:
+        The model and compressed coefficient used for testing.
+        The image planes and JSON file used for interactive relighting using the openlime web visualizer.
 ## Run   
     python train.py  
     
