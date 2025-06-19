@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import torch
-from modules.utils.utils import save_model_json
+from utils.utils import save_model_json
 import json
 
 
